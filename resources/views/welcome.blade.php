@@ -40,8 +40,8 @@
 
             <div class="card">
                 <div class="card-body">
-{{--                    @livewire--}}
-                    <livewire:action />
+                    @livewire('action',['name' => 'Testing Name'])
+{{--                    <livewire:action />--}}
                 </div>
             </div>
         </div>

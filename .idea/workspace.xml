@@ -133,7 +133,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -141,8 +141,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -158,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602165950199</updated>
-      <workItem from="1602165951281" duration="6871000" />
+      <workItem from="1602165951281" duration="10484000" />
     </task>
     <servers />
   </component>
@@ -166,9 +171,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1602172172713">
+    <state x="413" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1602180771118">
       <screen x="0" y="27" width="1848" height="1053" />
     </state>
-    <state x="413" y="188" width="1022" height="737" key="SettingsEditor/0.27.1848.1053@0.27.1848.1053" timestamp="1602172172713" />
+    <state x="413" y="188" width="1022" height="737" key="SettingsEditor/0.27.1848.1053@0.27.1848.1053" timestamp="1602180771118" />
   </component>
 </project>
