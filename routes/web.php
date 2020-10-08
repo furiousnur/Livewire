@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('contact',function (){
    return view('contact');
 });
+
+Route::get('users-list',function (){
+   return view('usersList');
+});
