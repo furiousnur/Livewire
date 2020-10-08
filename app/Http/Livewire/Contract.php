@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use Livewire\WithFileUploads;
 use Livewire\Component;
 
 class Contract extends Component
 {
+    use WithFileUploads;
+
+    public $photo;
     public $name;
     public $email;
     public $phone;
@@ -16,7 +19,8 @@ class Contract extends Component
            'name' => 'required',
            'email' => 'required|email',
            'phone' => 'required|numeric',
-           'msg' => 'required|string'
+           'msg' => 'required|string',
+            'photo' => 'image|max:1024|required',
         ]);
     }
 
@@ -25,10 +29,13 @@ class Contract extends Component
            'name' => 'required',
            'email' => 'required|email',
            'phone' => 'required|numeric',
-           'msg' => 'required|string'
+           'msg' => 'required|string',
+            'photo' => 'image|max:1024|required',
         ]);
 
-        dd($this->name, $this->email, $this->phone, $this->msg);
+        $this->photo->store('photos');
+
+        dd($this->name, $this->email, $this->phone, $this->msg, $this->photo);
     }
 
     public function render()
