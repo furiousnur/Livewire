@@ -1,5 +1,5 @@
 <div>
-    <h2> Name: {{$selectOption}} {{$name}}  </h2>
+    <h2> Name: {{ $selectOption}} {{$name}}  </h2>
         <input type="checkbox" wire:model="divHide">
 
         @if($divHide)
@@ -18,4 +18,6 @@
             <h3>Sum: {{$a + $b}}@if($loud) ! @endif </h3>
         </div>
         @endif
+
+    <button wire:mouseenter="resetName()">Reset Name</button>
 </div>

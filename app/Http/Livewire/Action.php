@@ -19,6 +19,10 @@ class Action extends Component
         $this->age = $age;
     }*/
 
+    public function resetName(){
+        $this->name = 'Meghla';
+    }
+
     public function render()
     {
         return view('livewire.action');
