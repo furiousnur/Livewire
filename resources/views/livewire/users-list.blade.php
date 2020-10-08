@@ -1,4 +1,9 @@
 <div>
+    <style>
+        nav svg{
+            height: 20px;
+        }
+    </style>
     <section>
         <div class="container">
             <div class="row">
@@ -29,7 +34,7 @@
                                 </tbody>
                             </table>
                         </div>
-{{--                        {{ $users->links() }}--}}
+                        {{ $users->links() }}
                     </div>
                 </div>
             </div>
