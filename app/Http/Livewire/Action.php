@@ -10,7 +10,11 @@ class Action extends Component
     public  $name = 'Nur Alam';
     public $a, $b;
 
-    
+    public $selectOption = 'Hello';
+
+    public $loud = false;
+    public $divHide = true;
+
     /*public function mount($age){
         $this->age = $age;
     }*/
