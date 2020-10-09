@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return \Spatie\Activitylog\Models\Activity::all();
     return view('welcome');
+});
+
+Route::get('all-logs',function (){
+    $logs =  \Spatie\Activitylog\Models\Activity::paginate(8);
+    return view('all_logs',compact('logs'));
 });
 
 
