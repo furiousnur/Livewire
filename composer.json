@@ -15,7 +15,8 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^2.2"
+        "livewire/livewire": "^2.2",
+        "spatie/laravel-activitylog": "^3.16"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

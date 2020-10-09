@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return \Spatie\Activitylog\Models\Activity::all();
     return view('welcome');
 });
 
@@ -23,6 +24,7 @@ Route::get('contact',function (){
 });
 
 Route::get('users-list',function (){
-   return view('usersList');
+    $usersList = 'usersList';
+   return view($usersList);
 });
 
