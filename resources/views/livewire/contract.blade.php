@@ -40,7 +40,7 @@
                                      @enderror
                                  </div>
 
-                                <div class="form-group">
+                               {{-- <div class="form-group">
                                      <label for="exampleInputPassword1">Photo</label>
                                      <input type="file" name="photo" class="form-control" id="photo" wire:model="photo"></input>
 
@@ -51,12 +51,12 @@
                                      @error('photo')
                                          <p class="text-danger">{{$message}}</p>
                                      @enderror
-                                 </div>
+                                 </div>--}}
                                  {{--<div class="form-check">
                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                  </div>--}}
-                                 <button type="submit" class="btn btn-primary" wire:click.prevent="submitForm">Submit</button>
+                                 <button type="submit" class="btn btn-primary" wire:click.prevent="store()">Submit</button>
                          </form>
                      </div>
                      </div>

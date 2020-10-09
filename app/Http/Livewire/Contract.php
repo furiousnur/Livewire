@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
+use http\Env\Request;
 use Livewire\WithFileUploads;
 use Livewire\Component;
 
@@ -13,6 +14,7 @@ class Contract extends Component
     public $email;
     public $phone;
     public $msg;
+    public $updateMode = false;
 
     public function updated($fields){
         $this->validateOnly($fields,[
@@ -20,22 +22,21 @@ class Contract extends Component
            'email' => 'required|email',
            'phone' => 'required|numeric',
            'msg' => 'required|string',
-            'photo' => 'image|max:1024|required',
+//            'photo' => 'image|max:1024|required',
         ]);
     }
 
-    public function submitForm(){
-        $this->validate([
+    public function store(){
+        $validatedDate = $this->validate([
            'name' => 'required',
            'email' => 'required|email',
            'phone' => 'required|numeric',
            'msg' => 'required|string',
-            'photo' => 'image|max:1024|required',
+//            'photo' => 'image|max:1024|required',
         ]);
 
-        $this->photo->store('photos');
-
-        dd($this->name, $this->email, $this->phone, $this->msg, $this->photo);
+        Contract::create($validatedDate);
+        return redirect()->to('users-list');
     }
 
     public function render()
